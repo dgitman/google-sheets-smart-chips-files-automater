@@ -14,6 +14,12 @@ The script adds a **🚀 Drive Chip Automator** menu to the spreadsheet and can:
 - save its place before the Apps Script runtime limit and continue later; and
 - fall back to slower individual updates if a bulk request fails.
 
+> [!IMPORTANT]
+> **Column selection:** The bulk scanner only looks at columns where the
+> **Header (Row 1)** contains one of these keywords: **"attachment"**,
+> **"attachments"**, or **"exhibit"**. Matching is not case-sensitive. Columns
+> without one of these keywords in the row 1 header are ignored.
+
 ## Important safety note
 
 The script refreshes a chip by wiping and reconstructing the target cell. Test
@@ -23,8 +29,8 @@ Chip.
 
 ## Supported columns
 
-The script scans columns whose row 1 header contains any of these words,
-case-insensitively:
+The script only scans columns whose **Header (Row 1)** contains any of these
+keywords. Matching is not case-sensitive:
 
 - `attachment`
 - `attachments`
