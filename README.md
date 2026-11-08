@@ -1,6 +1,6 @@
-# Drive Chip Automator for Google Sheets
+# Google Sheets Drive Chip Automator
 
-Drive Chip Automator is a Google Apps Script that converts Google Drive and
+Google Sheets Drive Chip Automator is a Google Apps Script that converts Google Drive and
 Google Docs URLs into native File Smart Chips in Google Sheets. It also
 rebuilds existing File Smart Chips so their displayed names update after the
 underlying Drive files are renamed.
